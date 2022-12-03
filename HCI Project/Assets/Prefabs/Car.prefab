@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2938974169737071299}
   m_Layer: 0
   m_Name: Tires (3)
-  m_TagString: Untagged
+  m_TagString: Car
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -111,7 +111,7 @@ GameObject:
   - component: {fileID: 2938974170634478205}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: Car
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -208,7 +208,7 @@ GameObject:
   - component: {fileID: 2938974170864232485}
   m_Layer: 0
   m_Name: Tires (4)
-  m_TagString: Untagged
+  m_TagString: Car
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -305,7 +305,7 @@ GameObject:
   - component: {fileID: 5200565324754457676}
   m_Layer: 0
   m_Name: Tires (5)
-  m_TagString: Untagged
+  m_TagString: Car
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -402,7 +402,7 @@ GameObject:
   - component: {fileID: 7864327159653910131}
   m_Layer: 0
   m_Name: Tires (6)
-  m_TagString: Untagged
+  m_TagString: Car
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -499,7 +499,7 @@ GameObject:
   - component: {fileID: 5366998749715088211}
   m_Layer: 0
   m_Name: Cube (4)
-  m_TagString: Untagged
+  m_TagString: Car
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -596,7 +596,7 @@ GameObject:
   - component: {fileID: 8115400688992209728}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: Car
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -693,7 +693,7 @@ GameObject:
   - component: {fileID: 1522901552259951887}
   m_Layer: 0
   m_Name: Cube (3)
-  m_TagString: Untagged
+  m_TagString: Car
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -787,7 +787,7 @@ GameObject:
   - component: {fileID: 2546813062249688465}
   m_Layer: 0
   m_Name: Car
-  m_TagString: Untagged
+  m_TagString: Car
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -831,7 +831,7 @@ GameObject:
   - component: {fileID: 6660293633050148174}
   m_Layer: 0
   m_Name: Cube (2)
-  m_TagString: Untagged
+  m_TagString: Car
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -928,7 +928,7 @@ GameObject:
   - component: {fileID: 2145565143229800220}
   m_Layer: 0
   m_Name: Cube (1)
-  m_TagString: Untagged
+  m_TagString: Car
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
