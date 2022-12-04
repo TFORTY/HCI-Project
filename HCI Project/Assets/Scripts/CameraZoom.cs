@@ -28,21 +28,23 @@ public class CameraZoom : MonoBehaviour
             zoomTarget = hit.point;
         }
 
-
-        if (Input.GetMouseButtonDown(0))
+        if (!ColourBlindManager.Instance.isMenuOpen)
         {
-            Camera.main.transform.LookAt(zoomTarget);
+            if (Input.GetMouseButtonDown(0))
+            {
+                Camera.main.transform.LookAt(zoomTarget);
 
-            DOTween.Kill(Camera.main);
-            Camera.main.DOFieldOfView(fullZoomedFOV, 0.5f).SetEase(Ease.OutCirc);
-        }
+                DOTween.Kill(Camera.main);
+                Camera.main.DOFieldOfView(fullZoomedFOV, 0.5f).SetEase(Ease.OutCirc);
+            }
 
-        if (Input.GetMouseButtonUp(0))
-        {
-            Camera.main.transform.rotation = defaultCamRotation;
+            if (Input.GetMouseButtonUp(0))
+            {
+                Camera.main.transform.rotation = defaultCamRotation;
 
-            DOTween.Kill(Camera.main);
-            Camera.main.DOFieldOfView(noZoomFOV, 0.2f).SetEase(Ease.InCirc);
+                DOTween.Kill(Camera.main);
+                Camera.main.DOFieldOfView(noZoomFOV, 0.2f).SetEase(Ease.InCirc);
+            }
         }
     }
 }
