@@ -43,7 +43,7 @@ public class CameraZoom : MonoBehaviour
 
         if (zoomActive)
         {
-            if (Input.GetKeyDown(KeyCode.X))
+            if (Input.GetKeyDown(KeyCode.X) || Input.GetMouseButtonDown(2))
             {
                 zoomPanelLocked = !zoomPanelLocked;
             }

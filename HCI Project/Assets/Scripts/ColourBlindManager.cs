@@ -7,6 +7,8 @@ using UnityEngine.Rendering.PostProcessing;
 public class ColourBlindManager : MonoBehaviour
 {
     [SerializeField] GameObject menuPanel;
+    [SerializeField] GameObject WholemenuPanel;
+    [SerializeField] GameObject minimizePanel;
 
     [SerializeField] TextureParameter defaultLUT;
     [SerializeField] TextureParameter protaLUT;
@@ -18,6 +20,8 @@ public class ColourBlindManager : MonoBehaviour
     [SerializeField] PostProcessVolume volume;
 
     public bool isMenuOpen;
+    public bool isWholeMenuOpen;
+    public bool ifMinimized=false;
 
     public static ColourBlindManager Instance { get; set; }
 
@@ -32,21 +36,51 @@ public class ColourBlindManager : MonoBehaviour
         menuPanel.SetActive(false);
     }
 
+    public void cancel() 
+        {
+        WholemenuPanel.SetActive(false);
+        minimizePanel.SetActive(false);
+        }
+
+    public void minimize()
+        {
+        if (ifMinimized)
+            {
+            WholemenuPanel.SetActive(false);
+            minimizePanel.SetActive(true);
+            }
+        else {
+            WholemenuPanel.SetActive(true);
+            minimizePanel.SetActive(false);
+            }
+        ifMinimized = !ifMinimized;
+
+        }
+
+    public void ToggleMenu()
+        {
+
+
+            if (isMenuOpen)
+                {
+                menuPanel.SetActive(false);
+                }
+            else
+                {
+                menuPanel.SetActive(true);
+                }
+
+            isMenuOpen = !isMenuOpen;
+            
+
+        }
+
     // Update is called once per frame
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.P))
         {
-            if (isMenuOpen)
-            {
-                menuPanel.SetActive(false);
-            }
-            else
-            {
-                menuPanel.SetActive(true);
-            }
-
-            isMenuOpen = !isMenuOpen;
+                WholemenuPanel.SetActive(true);
         }
     }
 
